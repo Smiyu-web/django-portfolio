@@ -28,8 +28,10 @@ load_dotenv(find_dotenv())
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-ALLOWED_HOSTS = ['portfolio-db-miyu.herokuapp.com']
+DEBUG = True
+# ALLOWED_HOSTS = ['portfolio-db-miyu.herokuapp.com']
+ALLOWED_HOSTS = []
+
 
 
 # Application definition
@@ -43,6 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'first_portfolio',
     'corsheaders',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
