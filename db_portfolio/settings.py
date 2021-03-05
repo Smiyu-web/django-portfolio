@@ -15,8 +15,7 @@ from dotenv import (find_dotenv, load_dotenv)
 import dj_database_url
 import os
 
-DEBUG = False
-ALLOWED_HOSTS = ['*']
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -29,9 +28,8 @@ load_dotenv(find_dotenv())
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-
-ALLOWED_HOSTS = []
+DEBUG = False
+ALLOWED_HOSTS = ['portfolio-db-miyu.herokuapp.com']
 
 
 # Application definition
