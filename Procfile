@@ -1,1 +1,1 @@
-web: gunicorn firstPythonApi.wsgi
+web: gunicorn first_portfolio.wsgi
