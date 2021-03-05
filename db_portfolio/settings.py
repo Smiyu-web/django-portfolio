@@ -13,9 +13,6 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 from pathlib import Path
 from dotenv import (find_dotenv, load_dotenv)
 import dj_database_url
-# import environ
-# env = environ.Env()
-# environ.Env.read_env()
 import os
 
 DEBUG = False
@@ -29,7 +26,6 @@ load_dotenv(find_dotenv())
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-# SECRET_KEY = env('DJANGO_SECRET_KEY')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
