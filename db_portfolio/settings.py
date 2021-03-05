@@ -28,9 +28,11 @@ load_dotenv(find_dotenv())
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
-# ALLOWED_HOSTS = ['portfolio-db-miyu.herokuapp.com']
-ALLOWED_HOSTS = []
+# DEBUG = True
+DEBUG = False
+
+ALLOWED_HOSTS = ['portfolio-db-miyu.herokuapp.com']
+# ALLOWED_HOSTS = []
 
 
 
